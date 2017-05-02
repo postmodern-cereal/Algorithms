@@ -127,6 +127,36 @@ class Homework7
         }
     }
 
+    public void testCase(int upTo)
+    {
+        int matrixSize = (upTo + 1);
+        int adjMatrix[][] = new int[matrixSize][matrixSize];
+        for(int a = 0; a < matrixSize; a++)
+        {
+            for(int b = 0; b < matrixSize; b++)
+            {
+                adjMatrix[a][b] = 0;
+            }
+        }
+        //the mod is used to only connect odd and even islands. It was identical
+        //to this for including all numbers, except i incremented by 1, and
+        //i did not ensure that j was even
+        for(int i = 1; i <= upTo; i+=2)
+        {
+            for(int j = 1; j <= upTo; j++)
+            {
+                if((i != j) && ((j % 2) == 0))
+                {
+                    //System.out.println(i + ", " + j);
+                    adjMatrix[i][j] = 1;
+                    adjMatrix[j][i] = 1;
+                }
+            }
+        }
+        //System.out.println();
+        this.startCycle(1, adjMatrix, matrixSize);
+    }
+
     public static void main (String[] args)
     {
         Homework7 h7 = new Homework7();

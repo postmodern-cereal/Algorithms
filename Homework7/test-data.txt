@@ -1,0 +1,13 @@
+Testing fully connected graphs of size from 5 to 15 in increments of 1.
+n = 5:	RUNS: 7 5 7 6 6  AVERAGE: 6.2
+n = 6:	RUNS: 299 163 86 31 30  AVERAGE: 121.8
+n = 7:	RUNS: 9212 7924 7363 7180 7204  AVERAGE: 7776.6
+n = 8:	RUNS: //RAN FOR 4 MINUTES WITHOUT COMPLETING A SINGLE TEST
+/
+Testing partially connected graphs of size from 5 to 10 in increments of 1.
+n = 5:	RUNS: 2 1 0 1 0  AVERAGE: 0.8
+n = 6:	RUNS: 2 9 1 5 5  AVERAGE: 4.4
+n = 7:	RUNS: 14 9 8 16 25  AVERAGE: 14.4
+n = 8:	RUNS: 181 92 89 94 55  AVERAGE: 102.2
+n = 9:	RUNS: 1272 1847 1246 1138 1090  AVERAGE: 1318.6
+n = 10:	RUNS: 50830 51375 52368 56192 51919  AVERAGE: 52536.8
